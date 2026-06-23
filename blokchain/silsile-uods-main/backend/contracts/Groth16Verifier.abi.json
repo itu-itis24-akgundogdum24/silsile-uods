@@ -1,0 +1,154 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [],
+    "name": "AnahtarKilitli",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "GecersizGiris",
+    "type": "error"
+  },
+  {
+    "inputs": [],
+    "name": "SadeceSahip",
+    "type": "error"
+  },
+  {
+    "anonymous": false,
+    "inputs": [],
+    "name": "VerifyingKeyLocked",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "icLength",
+        "type": "uint256"
+      }
+    ],
+    "name": "VerifyingKeySet",
+    "type": "event"
+  },
+  {
+    "inputs": [],
+    "name": "icLength",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "keyLocked",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "lockVerifyingKey",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[2]",
+        "name": "alpha",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[2][2]",
+        "name": "beta",
+        "type": "uint256[2][2]"
+      },
+      {
+        "internalType": "uint256[2][2]",
+        "name": "gamma",
+        "type": "uint256[2][2]"
+      },
+      {
+        "internalType": "uint256[2][2]",
+        "name": "delta",
+        "type": "uint256[2][2]"
+      },
+      {
+        "internalType": "uint256[2][]",
+        "name": "ic",
+        "type": "uint256[2][]"
+      }
+    ],
+    "name": "setVerifyingKey",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256[2]",
+        "name": "a",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[2][2]",
+        "name": "b",
+        "type": "uint256[2][2]"
+      },
+      {
+        "internalType": "uint256[2]",
+        "name": "c",
+        "type": "uint256[2]"
+      },
+      {
+        "internalType": "uint256[]",
+        "name": "publicInputs",
+        "type": "uint256[]"
+      }
+    ],
+    "name": "verifyProof",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
